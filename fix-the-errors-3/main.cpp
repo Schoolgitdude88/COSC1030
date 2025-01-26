@@ -31,11 +31,12 @@ int main()
 	// Echo print the input.
 	cout << endl << "You input the numbers as " << firstNumber
 		<< " and " << secondNumber << endl;
+	// this section prevents the firstNumber variable from being overwritten which was causing the logic error, probably not the most elegant way to fix it but it worked
 	int number1;
 	int number2;
-
 	number1 = firstNumber;
 	number2 = secondNumber;
+
 	// Now we will swap the values.
 	firstNumber = number2; secondNumber = number1;
 
