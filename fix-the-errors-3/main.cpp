@@ -31,9 +31,13 @@ int main()
 	// Echo print the input.
 	cout << endl << "You input the numbers as " << firstNumber
 		<< " and " << secondNumber << endl;
+	int number1;
+	int number2;
 
+	number1 = firstNumber;
+	number2 = secondNumber;
 	// Now we will swap the values.
-	firstNumber = secondNumber; secondNumber = firstNumber;
+	firstNumber = number2; secondNumber = number1;
 
 	// Output the values.
 	cout << "After swapping, the values of the two numbers are "
