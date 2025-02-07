@@ -15,8 +15,8 @@ int main ()
 
     // Constants for ticket prices
     const double CLASS_A_PRICE = 15.0;
-    const double CLASS_B_PRICE =12;
-    const double CLASS_C_PRICE =9;
+    const double CLASS_B_PRICE = 12;
+    const double CLASS_C_PRICE = 9;
 
     // Variables
     int classATickets; // Number of CLass A tickets sold
