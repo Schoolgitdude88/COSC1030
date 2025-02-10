@@ -15,7 +15,7 @@ int main ()
     const double AMCOLONIALPR = 85.0;
     const double MODERNPR = 57.50;
     const double FRCLASSICALPR = 127.75;
-
+    
 
     //Variables
     int americancolonial; // Number of american colonial sold
@@ -52,11 +52,14 @@ int main ()
     cout << "Total revenue from French Classical furniture is $"
     << setprecision(2) << fixed << Tfrenchclassical << endl;
 
+   // Calculate the total revenue from all furniture sales
+    double total = (Tamericancolonial) +
+                   (Tmodern) +
+                   (Tfrenchclassical);
 
-
-
-
-
+    // Display the Total revenue
+    cout << "The total revenue from furniture sales is $"
+         << setprecision(2) << fixed << total << endl;
 
 
     return 0;
