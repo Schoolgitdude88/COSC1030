@@ -25,11 +25,11 @@ cin >> numMonths;
 
 
 
-
+// sales array
 sales = new double[numMonths];
 
 
-
+// sales for each month
 cout << "Enter the amount of sales. \n";
 for (count = 0; count < numMonths; count++)
 {
@@ -38,23 +38,23 @@ for (count = 0; count < numMonths; count++)
 }
 
 
-
+// total sales
 for (count = 0; count < numMonths; count++)
 {
             total += sales[count];
 }
 
 
-
+// average sales
 average = total / numMonths;
 
 
-
+//Display results
 cout << fixed << showpoint << setprecision(2);
 cout << "\n\nTotal sales: $" << total << endl;
 cout << "Average Sales: $" << average << endl;
 
-
+// free memory
 delete[] sales;
 sales = nullptr;
 
