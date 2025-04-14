@@ -1,7 +1,65 @@
 //
-// Name
-// Date
+// Robert Pilkington
+// 04/13/2025
 // Monthly Sales Programming Project
 // COSC 1030
 //
 
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+
+double *sales = nullptr, //dynamic array
+total = 0.0,  //accumulator
+average; // for average sales
+int numMonths; // for the number of months
+int count; // counter variable
+
+
+// get months of sales
+cout << "How many months to calculate sales for? ";
+cin >> numMonths;
+
+
+
+
+sales = new double[numMonths];
+
+
+
+cout << "Enter the amount of sales. \n";
+for (count = 0; count < numMonths; count++)
+{
+            cout << "Month " << (count + 1) << ": ";
+            cin >> sales[count];
+}
+
+
+
+for (count = 0; count < numMonths; count++)
+{
+            total += sales[count];
+}
+
+
+
+average = total / numMonths;
+
+
+
+cout << fixed << showpoint << setprecision(2);
+cout << "\n\nTotal sales: $" << total << endl;
+cout << "Average Sales: $" << average << endl;
+
+
+delete[] sales;
+sales = nullptr;
+
+return 0;
+
+
+
+}
